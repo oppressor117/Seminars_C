@@ -9,7 +9,7 @@ if(num1Line!=null&&num2Line!=null&&num3Line!=null)
     //Парсим введенные числа
     int num1 = int.Parse(num1Line);
     int num2 = int.Parse(num2Line);
-    int num3 = int.Parse(num2Line);
+    int num3 = int.Parse(num3Line);
 
     //Сравниваем
     if(num1 > num2)
