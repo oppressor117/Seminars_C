@@ -2,7 +2,7 @@
 int numB = ReadData ("Введите число B: ");
 
 int res = Pow(numA, numB);
-PrintData(res);
+PrintData(numA+" в натуральной степени "+numB+" равно "+res);
 
 int ReadData(string msg)
 {
@@ -10,17 +10,17 @@ int ReadData(string msg)
     return int.Parse(Console.ReadLine()??"0");
 }
 
-int Pow(int A, int B)
+int Pow(int numA, int numB)
 {
     int res = 1;
-    for(int i = 1; i <= B; i++)
+    for(int i = 1; i <= numB; i++)
     {
-        res = A * res;
+        res = numA * res;
     }
     return res;
 }
 
-void PrintData(int res)
+void PrintData(string line)
 {
-    Console.WriteLine(res);
+    Console.WriteLine(line);
 }
